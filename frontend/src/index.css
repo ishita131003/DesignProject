@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@theme {
+  --color-premium-black: #050505;
+  --color-premium-gold: #FACB4E;
+  --color-premium-gray: #0F0F0F;
+  --color-text-secondary: #9CA3AF;
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-premium-black text-white font-sans antialiased overflow-x-hidden;
+  background-attachment: fixed;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, #0A0A0B 0%, #2D1B4B 50%, #0A0A0B 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(90deg, #FACB4E 0%, #F9E2AF 50%, #FACB4E 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-premium {
+  @apply px-8 py-3 rounded-md font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95;
+  background: #FACB4E;
+  color: #050505;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D1B4B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6B46C1;
+}
