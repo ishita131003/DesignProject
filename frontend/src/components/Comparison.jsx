@@ -72,14 +72,14 @@ const Comparison = () => {
                             </ul>
                         </div>
 
-                        {/* Column 3: designproject.co */}
+                        {/* Column 3: DesignProject.co */}
                         <motion.div 
                             initial={{ scale: 0.95, opacity: 0 }}
                             whileInView={{ scale: 1, opacity: 1 }}
                             viewport={{ once: true }}
                             className="bg-white rounded-2xl p-8 lg:-mt-4 lg:-mb-4 shadow-[0_20px_50px_rgba(250,203,78,0.15)] transform transition-all hover:translate-y-[-5px]"
                         >
-                            <h3 className="text-2xl font-bold text-premium-black mb-8">With designproject.co</h3>
+                            <h3 className="text-2xl font-bold text-premium-black mb-8">With DesignProject.co</h3>
                             <ul className="space-y-6">
                                 {designProjectPoints.map((point, i) => (
                                     <li key={i} className="flex gap-4 group">

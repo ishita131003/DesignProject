@@ -18,7 +18,7 @@ const About = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <span className="text-[10px] tracking-[0.5em] text-premium-gold uppercase font-bold mb-6 block">// THE STUDIO</span>
-                        <h1 className="text-6xl md:text-9xl font-serif italic mb-8">Architecting <br /> <span className="text-white/40">Auras</span></h1>
+                        <h1 className="text-5xl md:text-9xl font-serif italic mb-8">Architecting <br /> <span className="text-white/40">Auras</span></h1>
                         <p className="max-w-2xl mx-auto text-white/50 text-lg leading-relaxed">
                             DesignProject.co is a bespoke identity studio based in the digital avant-garde. We specialize in creating visual legacies for high-growth companies and premium brands.
                         </p>

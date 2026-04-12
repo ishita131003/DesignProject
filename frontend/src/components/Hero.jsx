@@ -23,7 +23,7 @@ const Hero = () => {
                         <span className="text-[10px] tracking-[0.3em] font-medium text-white/60 uppercase">Bespoke Identity Studio</span>
                     </div>
                     
-                    <h1 className="text-7xl md:text-8xl lg:text-[100px] leading-[0.9] mb-10">
+                    <h1 className="text-5xl md:text-8xl lg:text-[100px] leading-[0.9] mb-10">
                         <span className="font-serif italic text-white block">We Define</span>
                         <span className="font-serif text-premium-gold block mt-2">Your Aura</span>
                     </h1>

@@ -67,13 +67,24 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden mt-4 glass rounded-xl p-8 flex flex-col space-y-6 animate-in fade-in slide-in-from-top-4">
-                    <Link to="/" className="text-lg">Home</Link>
-                    <Link to="/services" className="text-lg">Services</Link>
-                    <Link to="/pricing" className="text-lg">Pricing</Link>
-                    <Link to="/about" className="text-lg">About</Link>
-                    <Link to="/contact" className="text-lg">Contact</Link>
-                    {!user && <Link to="/order" className="btn-premium text-center">Start Project</Link>}
+                <div className="md:hidden mt-4 glass rounded-xl p-8 flex flex-col space-y-6 animate-in fade-in slide-in-from-top-4 max-h-[80vh] overflow-y-auto">
+                    <Link to="/" className="text-lg font-bold" onClick={() => setIsOpen(false)}>Home</Link>
+                    
+                    <div className="space-y-4">
+                        <div className="text-[10px] tracking-[0.3em] uppercase font-bold text-white/30">Expertise</div>
+                        <div className="flex flex-col space-y-4 pl-4 border-l border-white/5">
+                            <Link to="/services/logo-design" className="text-sm hover:text-premium-gold" onClick={() => setIsOpen(false)}>Logo Design</Link>
+                            <Link to="/services/graphic-design" className="text-sm hover:text-premium-gold" onClick={() => setIsOpen(false)}>Graphic Design</Link>
+                            <Link to="/services/web-development" className="text-sm text-premium-gold" onClick={() => setIsOpen(false)}>// Web Development</Link>
+                            <Link to="/services/paid-advertisements" className="text-sm hover:text-premium-gold" onClick={() => setIsOpen(false)}>Paid Ads</Link>
+                            <Link to="/services/branding" className="text-sm hover:text-premium-gold" onClick={() => setIsOpen(false)}>Branding</Link>
+                        </div>
+                    </div>
+                    
+                    <Link to="/pricing" className="text-lg font-bold" onClick={() => setIsOpen(false)}>Pricing</Link>
+                    <Link to="/about" className="text-lg font-bold" onClick={() => setIsOpen(false)}>About</Link>
+                    <Link to="/contact" className="text-lg font-bold" onClick={() => setIsOpen(false)}>Contact</Link>
+                    {!user && <Link to="/order" className="btn-premium text-center" onClick={() => setIsOpen(false)}>Start Project</Link>}
                 </div>
             )}
         </nav>

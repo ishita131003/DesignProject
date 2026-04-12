@@ -31,7 +31,7 @@ const Contact = () => {
                             transition={{ duration: 0.8 }}
                         >
                             <span className="text-[10px] tracking-[0.5em] text-premium-gold uppercase font-bold mb-6 block">// CONTACT</span>
-                            <h1 className="text-5xl md:text-8xl font-serif italic mb-8">Initiate <br /> <span className="text-white/40">Dialogue</span></h1>
+                            <h1 className="text-4xl md:text-8xl font-serif italic mb-8">Initiate <br /> <span className="text-white/40">Dialogue</span></h1>
                             <p className="text-white/50 text-lg leading-relaxed max-w-md">
                                 Ready to architect your brand's visual legacy? Reach out to schedule a consultation with our studio principals.
                             </p>
