@@ -15,3 +15,5 @@ python-multipart
 emails
 jinja2
 python-dateutil
+gunicorn
+aiofiles
