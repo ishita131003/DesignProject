@@ -8,10 +8,8 @@ python-multipart
 pydantic-settings
 python-dotenv
 python-slugify
-cors
 python-jose
 bcrypt
-python-multipart
 emails
 jinja2
 python-dateutil
